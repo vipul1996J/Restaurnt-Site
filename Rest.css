@@ -1,0 +1,960 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    word-spacing: 1px;
+
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* navbar */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    list-style-type: none;
+    width: 500px;
+}
+
+.site-header>ul>li {
+    transform: scale(1);
+    transition-duration: 0.1s;
+    cursor: pointer;
+}
+
+.site-header ul li:hover {
+    color: darkgreen;
+    transform: scale(1.1);
+    font-weight: bolder
+}
+
+
+/* hero */
+.hero {
+    background-image: url(background.jpeg);
+    background-size: cover;
+    position: relative;
+}
+
+.hero .container .btn {
+
+    width: max-content;
+    font-size: 20px;
+    padding: 8px;
+    background-color: gold;
+    border: transparent;
+}
+
+.hero .container h1 {
+    font-size: 50px;
+}
+
+.hero:before {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+}
+
+.hero .container .heromenu {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    gap: 35px;
+    color: #ffff;
+}
+
+.hero .container img {
+    width: 176px;
+    height: 150px;
+    filter: brightness(0) invert(1);
+}
+
+.heromenu p {
+    max-width: 360px;
+    font-size: 18px;
+}
+
+/* menu */
+
+.menu .container {
+    max-width: 1480px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.menuinner {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    background-color: white;
+    padding: 50px 40px;
+    margin-top: -130px;
+}
+
+.card img {
+    max-width: 100%;
+
+}
+
+.card {
+    width: 100%;
+    text-align: center;
+}
+
+
+.card h3 {
+    text-align: start;
+    font-size: 35px;
+    padding: 10px 10px;
+}
+
+.card p {
+    text-align: justify;
+    padding: 10px 11px;
+    font-size: 21px;
+    color: #5a5a58;
+    line-height: 28px;
+}
+
+
+/* Art Gallery */
+.gallery {
+    max-width: 1349px;
+    margin: 0 auto;
+}
+
+.artitem {
+    max-width: 98%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.art {
+    background-color: black;
+    color: #ffff;
+}
+
+.artinner {
+    font-weight: 600;
+}
+
+.artmenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    flex-wrap: wrap;
+}
+
+.artinner a {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    font-size: 22px;
+}
+
+.artinner a:hover {
+    color: goldenrod;
+    animation: ease-in-out;
+}
+
+.artitem h2 {
+    font-size: 50px;
+}
+
+.artitem button {
+    font-size: 18px;
+    padding: 8px;
+    background-color: #ffff;
+    margin-top: 20px;
+}
+
+.artimg {
+    display: grid;
+    grid-auto-flow: column;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 40px;
+    padding: 64px 0;
+}
+
+.artimg img {
+    aspect-ratio: 3/3;
+    width: 100%;
+    height: 100%;
+}
+
+/* piquant */
+.piquantinner {
+    display: flex;
+    max-width: 1349px;
+    margin: 50px auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.piquantleft {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 50%;
+    padding: 15px;
+
+}
+
+.piquantleft h1 {
+    font-size: 42px;
+    text-transform: uppercase;
+}
+
+.piquantleft p {
+    font-size: 21px;
+    line-height: 30px;
+    opacity: 0.56;
+    text-align: justify;
+}
+
+.piquantright img {
+    width: 100%;
+    height: 100%;
+}
+
+/* recomond */
+.recomond {
+    padding: 70px 0;
+    background-color: black;
+}
+
+.recomond .container {
+    max-width: 1255px;
+    margin: 0 auto;
+}
+
+.headsec {
+    text-align: center;
+    width: 88%;
+    margin: 0 auto;
+    color: white;
+}
+
+.headsec h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.headsec p {
+    font-size: 18px;
+    line-height: 27px;
+    padding: 3% 11%;
+}
+
+.bodysec {
+    display: flex;
+    gap: 60px;
+    overflow-x: auto;
+    overscroll-behavior: auto;
+}
+
+.bodysec::-webkit-scrollbar {
+    width: 0;
+}
+
+.snacks,
+.snacks>img {
+    width: 378px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.snacks span {
+    background: #ffd71b;
+    padding: 15px 10px;
+    border-radius: 50%;
+    font-size: 29px;
+    position: relative;
+    top: -20px;
+}
+
+.snacks h2 {
+    font-size: 35px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.snacks p {
+    font-size: 20px;
+    line-height: 27px;
+    margin: 10px 15px 25px 15px;
+}
+
+.recomond .container .btn {
+    width: 109px;
+}
+
+.recomond .container .btn img {
+    width: 100%;
+    filter: brightness(0) invert(1);
+}
+
+.recomond .container .btn {
+    width: 85px;
+    position: relative;
+    top: -310px;
+}
+
+.arrow {
+    height: 0;
+}
+
+.recomond .container .btn.right {
+    left: 1260px;
+}
+
+.recomond .container .btn.left {
+    top: -401px;
+    right: 94px;
+}
+
+/* Simple modification */
+.modify .container {
+    max-width: 1360px;
+    padding: 40px 0;
+}
+
+.modifytop h2 {
+    margin: 35px 0;
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+.modifytop p {
+    font-size: 21px;
+    margin: 20px 0;
+    line-height: 33px;
+    text-align: justify;
+    position: relative;
+
+}
+
+.modifybody {
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+    margin: 45px 0;
+}
+
+.bodyinner {
+    width: 425px;
+    height: 366px;
+    position: relative;
+    background-size: cover;
+    color: #fff;
+    cursor: pointer;
+}
+
+.bodyinner p {
+    position: relative;
+    top: 50px;
+    font-size: 22px;
+    padding: 0 15px;
+    line-height: 30px;
+    opacity: 0;
+    transform: scale(0.5);
+    text-align: center;
+    transition-duration: 1.7s;
+}
+
+.bodyinner h2 {
+    font-size: 30px;
+    position: relative;
+    padding: 0 15px;
+    top: 200px;
+    padding-top: 25px;
+    text-align: center;
+    transition-duration: 1.7s;
+    color: #ffd71b;
+}
+
+.bodyinner:before {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+}
+
+.first {
+    background-image: url(first.jpg);
+}
+
+.sec {
+    background-image: url(sec\ \(1\).jpg);
+}
+
+.thrd {
+    background-image: url(thrd.jpg);
+}
+
+.bodyinner:hover>p {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+.bodyinner:hover>h2 {
+    top: 10px;
+}
+
+/* Timmings */
+.time .container {
+    max-width: 1360px;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.address {
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.addresstop {
+    margin: 30px 10px;
+    line-height: 31px;
+    font-size: 21px;
+    color: #b3b2b2;
+}
+
+.addresstop h1 {
+    font-size: 37px;
+    color: black;
+    margin: 45px 0;
+}
+
+.addressinner {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 20px;
+    gap: 40px;
+}
+
+.addressinner a {
+    text-decoration: none;
+    color: black;
+}
+
+.timecard {
+    width: 45%;
+    background-color: #2c2c2c;
+    color: #fff;
+}
+
+.cardinner ul {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-size: 24px;
+    row-gap: 25px;
+    margin: 25px 0;
+}
+
+.cardinner {
+    text-align: center;
+    border: 1px solid #6c6c6c;
+}
+
+.cardinner h2 {
+    font-size: 37px;
+    margin: 20px 0;
+}
+
+.cardinner span {
+    color: #ffd71b;
+}
+
+.cardinner {
+    text-align: center;
+    margin: 35px;
+    padding: 33px;
+}
+
+/* Footer */
+.footer {
+    background-color: black;
+    color: #fff;
+}
+
+.footer .container {
+    max-width: 1360px;
+}
+
+.footertop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px 10px;
+}
+
+.f-address .img {
+
+    filter: brightness(0) invert(1);
+}
+
+.f-address p {
+    width: 50%;
+    font-size: 18px;
+    margin: 25px 0;
+}
+
+.f-adsin {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 35px;
+    margin: 35px 0;
+    font-size: 17px;
+}
+
+.f-adsin a {
+    color: white;
+    text-decoration: none;
+}
+
+.booking>form {
+    display: grid;
+    width: 65%;
+    gap: 20px;
+    padding: 30px;
+    margin: 0 auto;
+    border: 1px solid gray
+}
+
+.booking input {
+    width: 80%;
+    height: 40px;
+    text-align: center;
+    font-size: 19px;
+    margin: 0 auto;
+}
+
+.booking span {
+    text-align: center;
+    font-size: 22px;
+
+}
+
+.booking input[type="button"] {
+    background: #ffd71b;
+    width: 50%;
+    margin-top: 20px;
+}
+
+.footerbtm {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px dashed;
+    padding: 15px;
+    font-size: 16.8px;
+}
+
+/* fa fa icon */
+.fa {
+    margin-right: 5px;
+}
+
+.fa-solid,
+.fas {
+    margin-right: 5px;
+    color: white;
+}
+
+.fa-brands {
+    margin: 0 5px;
+}
+
+.fa-regular,
+.far {
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+.fa-link {
+    color: black;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+/* Media Property */
+@media(max-width: 1255px) {
+    .recomond .container {
+        overflow: hidden;
+    }
+
+    .card h3 {
+        font-size: 23px;
+    }
+
+    .card p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .cardinner ul {
+        font-size: 21px;
+    }
+}
+
+@media(max-width: 1132px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    .cardinner ul {
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .mobile-menu {
+      display: none;
+    }
+    .menu-item {
+      display: flex;
+    }
+    .hamburger-icon,
+    .close-icon {
+      display: none;
+    }
+  }
+
+@media(max-width:767px) {
+    .hero .container .heromenu {
+        height: 450px;
+    }
+
+    .site-header {
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+    }
+
+    .site-header div:first-child {
+        width: 60%;
+    }
+
+    .mobile-menu {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .mobile-menu i {
+        color: #000;
+        font-size: 22px;
+    }
+
+    .site-header ul {
+        display: none;
+        position: absolute;
+        top: 142px;
+        z-index: 99;
+        background: #FFF;
+        width: 100%;
+    }
+
+    .heromenu {
+        align-items: center;
+        text-align: center;
+    }
+
+    .heromenu p {
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .hero .container .btn {
+        width: max-content;
+        font-size: 14px;
+    }
+
+
+    .hero .container h1 {
+        font-size: 20px;
+    }
+
+    .hero .container img {
+        width: 80px;
+        height: 65px;
+    }
+
+    /* menu */
+    .menuinner {
+        flex-direction: column;
+        align-items: center;
+        gap: unset;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .menu .container {
+        height: unset;
+    }
+
+    .card {
+        width: 100%;
+        text-align: center;
+        padding: 5px 0px;
+    }
+
+    .card img {
+        max-width: 100%;
+
+    }
+
+    .card h3 {
+        font-size: 20px;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    .card p {
+        font-size: 14px;
+        width: 100%;
+        line-height: 24px;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    /* art gallery */
+    .artitem {
+        flex-direction: column;
+    }
+
+    .artinner {
+        left: 0;
+        top: 0;
+    }
+
+    .artinner a {
+        font-size: 16px;
+        margin: 10px;
+    }
+
+    .artitem h2 {
+        font-size: 25px;
+    }
+
+    .artitem button {
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    .artimg {
+        grid-auto-flow: row;
+        gap: 10px;
+        padding: 20px 0;
+        width: 100%;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center
+    }
+
+    .artimg img {
+        width: 200px;
+        height: 200px;
+        text-align: center;
+    }
+
+    .piquantinner {
+        flex-direction: column;
+    }
+
+    .piquantleft {
+        gap: 20px;
+        width: 80%;
+    }
+
+    .piquantleft h1 {
+        font-size: 25px;
+    }
+
+    .piquantleft p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    /*  */
+    .headsec {
+        text-align: start;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .headsec h2 {
+        font-size: 20px;
+    }
+
+    .headsec p {
+        font-size: 12px;
+        padding: 0;
+    }
+
+    .bodysec {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .modifytop {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .modifytop h2 {
+        font-size: 20px;
+        margin: 15px 0;
+    }
+
+    .modifytop p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .modifybody {
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .bodyinner {
+        width: 90%;
+        height: 95%;
+        background-size: cover;
+    }
+
+
+    .bodyinner h2 {
+        top: 0px;
+        font-size: 18px;
+    }
+
+
+    .bodyinner p {
+        top: 0;
+        font-size: 15px;
+        line-height: 18px;
+        margin: 26px;
+    }
+
+    .content {
+        flex-direction: column-reverse;
+    }
+
+    .timecard {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .cardinner h2 {
+        font-size: 18px;
+    }
+
+    .cardinner ul {
+        font-size: 12px;
+    }
+
+    .address {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .addresstop h1 {
+        font-size: 20px;
+        margin: 15px 0;
+    }
+
+    .addresstop p {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .addressinner {
+        font-size: 15px;
+        width: 95%;
+        grid-template-columns: 1fr;
+        gap: 10px;
+
+    }
+
+    .footertop {
+        display: flex;
+        flex-direction: column-reverse;
+        row-gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .f-address {
+        text-align: center;
+        margin: 20px 10px;
+    }
+
+    .img img {
+        width: 40%;
+    }
+
+    .f-address p {
+        width: 100%;
+        font-size: 14px;
+        padding: 20px;
+        ;
+    }
+
+    .f-adsin {
+        gap: 10px;
+    }
+
+    .booking>form {
+        width: 100%;
+    }
+
+    .booking input {
+        height: 30px;
+        font-size: 15px;
+    }
+
+    .booking span {
+        font-size: 15px;
+    }
+
+    .footerbtm {
+        flex-direction: column;
+        font-size: 15px;
+        gap: 6px;
+    }
+}
